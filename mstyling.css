@@ -1,0 +1,439 @@
+:root{
+    --yellowColor: #ffd018;
+    --darkgray: #151618;
+    --lightgray: #303435;
+    --grey: #bababe;
+    --golden: #ffa200;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+}
+p {
+    color: var(--grey);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.service-area p, .main-domains p, .work-flow p{
+    color: var(--lightgray);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*Menu Bar css*/
+header{
+    background: linear-gradient(1turn ,#303435, #292d2d 47.83%, #151618);
+}
+.menu-header{
+    position: sticky;
+    top: 0;
+    z-index: 111;
+    background-color: var(--darkgray);
+}
+.menu-header .menu{
+    padding: 2rem 0;
+    transition: .5s ease;
+}
+.scrolling-active{
+    background-color: var(--lightgray);
+    box-shadow: 0 3px 1rem rgba(0,0,0,.2);
+}
+.scrolling-active .menu{
+    padding: .5rem 0;
+}
+header .header-content{
+    padding-top: 6%;
+}
+.menu-header .menu  .navbar-nav .nav-link,.menu-header .form-inline .fa, .menu-header .navbar .account a{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--yellowColor) !important;
+    transition: 200ms ease-in;
+}
+.menu-header .menu  .navbar-nav .nav-link:hover, .menu-header .navbar .account a:hover{
+    color: white !important;
+}
+.menu-header .menu .navbar .active{
+    color: var(--golden) !important;
+}
+.menu-header .form-inline .fa{
+    margin: 0 3rem;
+    color: var(--yellowColor) !important;
+    transform: scaleX(-1);
+}
+.main-domains .portfolio-work .active{
+    color: var(--yellowColor) !important;
+}
+header .header-content h2{
+    font-size: 70px;
+    color: #fff;
+    line-height: 1.8;
+}
+header .header-content h4{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 400;
+}
+header .header-content .poster-image{
+    margin: 10% 0;
+}
+.menu-header .search-bar{
+    display: none;
+    width: 50%;
+    border-radius: 10px;
+    border: 2px solid var(--yellowColor);
+    margin: 0;
+    padding: 0.7rem 2rem;
+    color: #ffffff !important;
+    font-size: 14px;
+    background-color: transparent;
+    transition-duration: 500ms;
+    z-index: 111;
+}
+
+/*service ares css*/
+.service-area .single-service-area h2{
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: var(--yellowColor);
+    transition: 300ms ease-in;
+}
+.service-area .single-service-area h2:hover{
+    color: var(--golden);
+}
+.service-area .single-service-area h4, .main-domains h4, .work-flow .single-steps h4{
+    font-weight: 700;
+    color: #404551;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.service-area .card{
+    border: none;
+}
+/*Service client's logo*/
+.service-area .clients-logo h2, .work-flow h2{
+    font-size: 40px;
+    margin: 0;
+    font-weight: 900;
+    margin-bottom: 4rem;
+}
+.service-area .single-service-area, .service-area .clients-logo .logo-img, .main-domains .single-domain{
+    margin-bottom: 2rem;
+}
+.service-area .service-carousel-controls {
+    filter: invert(100%);
+}
+.service-area .service-carousel-controls{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    top: 50%;
+    margin-top: -30px;
+    border-radius: 50%;
+    transition-duration: 500ms;
+}
+.service-area .carousel-control-prev{
+    left: -25px;
+}
+.service-area .carousel-control-next{
+    right: -25px;
+}
+
+/*feature portion*/
+.feature{
+    background-color: var(--lightgray)
+}
+.feature .feature-progress .progress-bar{
+    background-color: white;
+    height: 5px;
+}
+.feature .feature-progress .progress-points{
+    margin-bottom: 30px;
+}
+.feature .feature-progress .progress-bar .progress-fill{
+    height: 5px;
+    background-color: var(--yellowColor);
+}
+.feature .progress-points{
+    position: relative;
+}
+.feature .progress-points span{
+    position: absolute;
+}
+.feature .feature-text h2, .main-domains .portfolio-work h2, .contact-us .mid-content h2{
+    font-size: 40px;
+    margin: 0;
+    font-weight: 900;
+}
+
+/*main domain css*/
+.main-domains .single-domain .fa{
+    font-size: 40px;
+    color: var(--yellowColor);
+    margin-bottom: 2.5rem;
+}
+.main-domains .portfolio-work .filter p{
+    text-align: center;
+    padding: 0 1rem;
+}
+/*gallery*/
+.gallery img{
+    height: 15rem;
+    width: 100%;
+    padding: 0;
+}
+.main-domains .portfolio-work .filter p{
+    cursor: pointer;
+}
+.gallery .gallery-grid .grid-items{
+    position: relative;
+}
+.gallery .gallery-grid .overlay p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--lightgray);
+}
+.gallery .gallery-grid .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--yellowColor);
+    color: white;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+.gallery .gallery-grid .overlay:hover{
+    opacity: 1;
+}
+@keyframes zoom-in {
+    0% {
+        transform: scale(.1);
+    }
+    100% {
+        transform: none;
+    }
+}
+.is-animated {
+    animation: .6s zoom-in;
+}
+
+/*work flow*/
+.work-flow{
+    background: url("images/gallery/bg.jpg");
+    background-position-y: 7rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.work-flow .carousel-inner{
+    margin-top: 11rem;
+}
+.work-flow .work-steps .single-steps{
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+}
+.work-flow .carousel-indicators > li {
+    border-radius: 50%;
+    background-color: var(--grey);
+    width: 13px;
+    height: 13px;
+}
+.work-flow .carousel-indicators .active{
+    background-color: var(--yellowColor);
+}
+.work-flow .carousel .workflow-carousel-controls{
+    display: none;
+}
+
+/*contact Us*/
+.contact-us{
+    position: relative;
+    background-image: url("images/cycle.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.contact-us .mid-content{
+    padding: 5rem;
+}
+
+/*footers CSS*/
+.footer{
+    padding: 30px;
+    background-color: var(--darkgray);
+}
+.top-footer h4{
+    color: white;
+    margin-bottom: 2rem;
+}
+.top-footer .fa{
+    padding: 0 1rem;
+    font-size: 15px;
+    color: var(--yellowColor);
+}
+.top-footer .footer-menu p:hover, .top-footer .blogs p:hover{
+    color: white;
+}
+.bottom-footer{
+    background-color: var(--lightgray);
+}
+.bottom-footer p{
+    margin: 0;
+}
+.bottom-footer .fa{
+    color: #abadbe;
+    padding: 0 1.5rem;
+}
+.bottom-footer .copyright a{
+    color: var(--yellowColor);
+}
+/*button*/
+.service-area .btn, .contact-us .btn{
+    background-color: var(--yellowColor);
+    min-width: 150px;
+    height: 54px;
+    padding: 0 30px;
+    border-radius: 70px;
+    color: var(--lightgray);
+    font-size: 14px;
+    line-height: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s ease-in;
+}
+.service-area .btn:hover, .contact-us .btn:hover    {
+    background-color: var(--golden);
+    color: white;
+}
+/*Own Bootstrap*/
+.my-10{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.mb-10{
+    margin-bottom: 15rem;
+}
+.py-10{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/*Back tp top button*/
+.back-to-top{
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border-radius: 80%;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--yellowColor);
+    cursor: pointer;
+}
+.up{
+    padding: 1rem;
+}
+.back-to-top:hover{
+    color: var(--yellowColor);
+    background-color: white;
+}
+
+
+/*Media Queries*/
+@media (min-width: 990px) and (max-width: 1200px){
+    header .header-content h2 {
+        font-size: 50px;
+    }
+    .menu-header .menu  .navbar-nav .nav-link,.menu-header .form-inline .fa, .menu-header .navbar .account a{
+        font-size: 0.9rem;
+    }
+    header .header-content h4{
+        font-size: 30px;
+    }
+    .menu-header .form-inline .fa{
+        margin: 0 2rem;
+    }
+}
+@media (min-width: 576px) and (max-width: 990px){
+    header .header-content h2 {
+        font-size: 40px;
+    }
+    header .header-content h4{
+        font-size: 20px;
+    }
+    .main-domains .portfolio-work h2, .work-flow h2{
+        font-size: 35px;
+    }
+    .work-flow{
+        background-position-y: 10rem;
+    }
+    .service-area .single-service-area h2{
+        font-size: 40px;
+    }
+    .menu-header .navbar-brand{
+        margin: 0;
+    }
+    .menu-header .form-inline .fa{
+        margin: 0;
+    }
+    .menu-header .search-bar{
+        margin: 1rem 0;
+    }
+}
+@media (max-width: 576px) {
+    header .header-content h2 {
+        font-size: 30px;
+    }
+    header .header-content h4{
+        font-size: 15px;
+    }
+    .menu-header .header-content h4{
+        font-size: 15px;
+    }
+    .service-area .single-service-area h2{
+        font-size: 30px;
+    }
+    .service-area .clients-logo h2, .work-flow h2{
+        font-size: 27px;
+    }
+    .feature .feature-text h2, .main-domains .portfolio-work h2, .work-flow h2, .contact-us .mid-content h2{
+        font-size: 25px;
+    }
+    .menu-header .form-inline .fa{
+        margin: 0;
+    }
+    .work-flow{
+        background-position-y: 12rem;
+    }
+
+}
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
