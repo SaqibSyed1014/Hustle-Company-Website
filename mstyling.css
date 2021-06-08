@@ -391,7 +391,7 @@ header .header-content .poster-image{
         margin: 0;
     }
     .menu-header .form-inline .fa{
-        margin: 0;
+        margin: 0 2rem;
     }
     .menu-header .search-bar{
         margin: 1rem 0;
