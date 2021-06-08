@@ -1,2 +1,2 @@
 # Hustle-Company-Website
-A responsive website made for Hustle company which includes many cool features like card carousel, image filtering and smooth scrolling. 
+A responsive website made for Hustle company which includes many cool features like onscroll animated menu bar, light-box, card carousels, image filtering and smooth scrolling. 
